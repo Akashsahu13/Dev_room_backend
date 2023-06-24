@@ -470,7 +470,7 @@ router.put("/follower/:profileId", authenticate, async (request, response) => {
     console.log(pp);
     // console.log(pro._id)
     // console.log(pro);
-  let isfollowed = fouser.Following.includes(profileIds); 
+  let isfollowed = fouser.Following.includes(pp); 
   console.log(isfollowed);
   var option2 = isfollowed ? "$pull" : "$addToSet";
 
